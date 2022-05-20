@@ -1,0 +1,38 @@
+.cards-container {
+	margin-top: 3rem;
+}
+
+.card {
+	text-align: left;
+	background-color: $white;
+	box-shadow: 0 4px 15px -2px hsla(234, 12%, 34%, 0.4);
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 4px;
+	border-top: 4px solid;
+}
+
+.card:nth-of-type(1) {
+	border-top-color: $cyan;
+}
+
+.card:nth-of-type(2) {
+	border-top-color: $red;
+}
+
+.card:nth-of-type(3) {
+	border-top-color: $orange;
+}
+
+.card:nth-of-type(4) {
+	border-top-color: $blue;
+}
+
+.card-title {
+	color: $dark-blue;
+	margin-bottom: 0.75rem;
+}
+
+.card-text {
+	font-size: 0.875rem;
+}
