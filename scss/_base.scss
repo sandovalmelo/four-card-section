@@ -11,3 +11,21 @@ $light-gray: hsl(0, 0%, 98%);
 
 // font
 $font-family: "Poppins", sans-serif;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $light-gray;
+	font-family: $font-family;
+	color: $grayish-blue;
+}
