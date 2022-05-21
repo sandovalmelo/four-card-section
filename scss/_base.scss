@@ -13,6 +13,13 @@ $white: #fff;
 // font
 $font-family: "Poppins", sans-serif;
 
+// shadow
+$box-shadow: 0 4px 15px -2px hsla(234, 12%, 34%, 0.4);
+
+// screens
+$md-screen: 630px;
+$lg-screen: 980px;
+
 *,
 *::after,
 *::before {

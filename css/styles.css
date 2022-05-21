@@ -28,6 +28,20 @@ main {
 .main-text {
   margin-top: 1rem; }
 
+@media (min-width: 980px) {
+  main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .main-title,
+  .main-subtitle {
+    font-size: 1.75rem; }
+
+  .main-text {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto; } }
 .cards-container {
   margin-top: 3rem; }
 
@@ -62,5 +76,30 @@ main {
 
 .card-img {
   text-align: right; }
+
+@media (min-width: 630px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem; }
+
+  .card {
+    margin-bottom: 0; } }
+@media (min-width: 980px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+
+  .card:nth-of-type(1) {
+    grid-row: 1 / -1;
+    align-self: center; }
+
+  .card:nth-of-type(4) {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+    align-self: center; }
+
+  .card:nth-of-type(3) {
+    grid-column: 2 / 3; } }
 
 /*# sourceMappingURL=styles.css.map */

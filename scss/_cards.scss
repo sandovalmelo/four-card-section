@@ -5,7 +5,7 @@
 .card {
 	text-align: left;
 	background-color: $white;
-	box-shadow: 0 4px 15px -2px hsla(234, 12%, 34%, 0.4);
+	box-shadow: $box-shadow;
 	margin-bottom: 1rem;
 	padding: 1rem;
 	border-radius: 4px;
@@ -40,4 +40,38 @@
 
 .card-img {
 	text-align: right;
+}
+
+@media (min-width: $md-screen) {
+	.cards-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	.card {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: $lg-screen) {
+	.cards-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.card:nth-of-type(1) {
+		grid-row: 1 / -1;
+		align-self: center;
+	}
+
+	.card:nth-of-type(4) {
+		grid-column: 3 / 4;
+		grid-row: 1 / -1;
+		align-self: center;
+	}
+
+	.card:nth-of-type(3) {
+		grid-column: 2 / 3;
+	}
 }

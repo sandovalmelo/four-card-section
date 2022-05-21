@@ -16,3 +16,22 @@ main {
 .main-text {
 	margin-top: 1rem;
 }
+
+@media (min-width: $lg-screen) {
+	main {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-title,
+	.main-subtitle {
+		font-size: 1.75rem;
+	}
+
+	.main-text {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
